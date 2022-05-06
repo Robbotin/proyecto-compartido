@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from productos.Producto import Producto
+from Producto import Producto
 
 @dataclass
 class Productos:
