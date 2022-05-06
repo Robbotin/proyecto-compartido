@@ -17,4 +17,10 @@ class Productos:
             if producto.id == productoId:
                 return producto
 
-                
+        raise Exception(f'No existe el producto con id {productoId}')
+
+    def __repr__(self) -> str:
+        cadena = 'PRODUCTOS'
+        for producto in self.productos:
+            cadena += '\n\t' + producto.__repr__()
+        return cadena
