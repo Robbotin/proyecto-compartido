@@ -6,7 +6,7 @@ class Impuestos:
     def __init__(self):
         self.impuestos: list[Impuesto] = []
 
-    def recuperadorTodos(self) -> list[Impuesto]:
+    def recuperarTodos(self) -> list[Impuesto]:
         return self.impuestos
 
     def añadir(self, impuesto: Impuesto) -> None:
@@ -23,5 +23,5 @@ class Impuestos:
     def __repr__(self) -> str:
         cadena = 'IMPUESTOS'
         for impuesto in self.impuestos:
-            cadena += '\n\t' + impuesto.__repr()
+            cadena += '\n\t' + impuesto.__repr__()
         return cadena    
